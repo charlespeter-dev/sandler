@@ -1,0 +1,17 @@
+main {
+    margin-top: 100px;
+}
+
+.site-header__main {
+    --header-main-bg: #21245c;
+}
+
+.blog-grid {
+    --grid-item-col: 3;
+}
+
+@media (max-width: 767px) {
+    .blog-grid {
+        --grid-item-col: 1;
+    }
+}

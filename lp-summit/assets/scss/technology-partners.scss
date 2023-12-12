@@ -1,0 +1,60 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "fluid";
+
+
+.bs-container {
+
+    &.technology-partners {
+
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: calc((100vw - 100%) / -2);
+            width: 100vw;
+            background-color: #FAFAFA;
+            z-index: -1;
+        }
+
+        h2 {
+            @include fluid(font-size, 37px, 42px);
+            @include fluid(line-height, 49px, 54px);
+            font-weight: 700;
+        }
+
+        nav {
+
+            .nav-link {
+
+                span {
+                    display: block;
+                    color: #A0A0A0;
+                    border-bottom: 2px solid #A0A0A0;
+                    padding-block-end: 1rem;
+                    cursor: pointer;
+                    @include fluid(font-size, 22px, 22px);
+                    @include fluid(line-height, 32px, 32px);
+                }
+
+                &.active {
+                    font-weight: 700;
+
+                    span {
+                        color: #21245C;
+                        border-bottom: 2px solid #21245C;
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            margin-block-start: 1.5rem;
+        }
+    }
+}

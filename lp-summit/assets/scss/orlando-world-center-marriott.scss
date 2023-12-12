@@ -1,0 +1,61 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "fluid";
+
+.bs-container {
+
+    &.orlando-world-center-marriott {
+
+        h2 {
+            @include fluid(font-size, 30px, 35px);
+            @include fluid(line-height, 35px, 40px);
+            font-weight: 700;
+        }
+
+        img {
+            border-radius: 15px;
+        }
+
+        .cta-container {
+            .cta {
+                background-color: #F05A28;
+                color: #FFF;
+                @include fluid(font-size, 14px, 14px);
+                @include fluid(line-height, 21px, 21px);
+                font-weight: 700;
+                display: inline-block;
+                text-decoration: none;
+                padding-block: 1rem;
+                padding-inline: 1.5rem;
+                border-radius: 35px;
+            }
+        }
+
+        // check-lg
+        // https://icons.getbootstrap.com/icons/check-lg/
+        // https://fffuel.co/eeencode/
+
+        .check-lg {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                padding-left: 50px;
+                margin-bottom: 1.5rem;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 44px;
+                    height: 44px;
+                    background-repeat: no-repeat;
+                    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0NCIgaGVpZ2h0PSI0NCIgZmlsbD0iI0YwNUEyOCIgY2xhc3M9ImJpIGJpLWNoZWNrLWxnIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik0xMi43MzYgMy45N2EuNzMzLjczMyAwIDAgMSAxLjA0NyAwYy4yODYuMjg5LjI5Ljc1Ni4wMSAxLjA1TDcuODggMTIuMDFhLjczMy43MzMgMCAwIDEtMS4wNjUuMDJMMy4yMTcgOC4zODRhLjc1Ny43NTcgMCAwIDEgMC0xLjA2LjczMy43MzMgMCAwIDEgMS4wNDcgMGwzLjA1MiAzLjA5MyA1LjQtNi40MjVhLjI0Ny4yNDcgMCAwIDEgLjAyLS4wMjIiIHN0cm9rZT0iI0YwNUEyOCIgc3Ryb2tlLXdpZHRoPSIxIi8+Cjwvc3ZnPg==");
+                }
+            }
+        }
+    }
+}

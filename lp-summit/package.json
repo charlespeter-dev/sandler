@@ -1,0 +1,16 @@
+{
+  "name": "lp-summit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx sass --watch assets/scss:assets/css",
+    "build": "npx sass --style=compressed assets/scss:assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "sass": "^1.69.5"
+  }
+}

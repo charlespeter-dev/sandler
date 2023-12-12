@@ -1,0 +1,40 @@
+.bs-container.technology-partners {
+  position: relative;
+}
+.bs-container.technology-partners::before {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: calc((100vw - 100%) / -2);
+  width: 100vw;
+  background-color: #FAFAFA;
+  z-index: -1;
+}
+.bs-container.technology-partners h2 {
+  font-size: calc(37px + 5 * (100vw - 375px) / 1545);
+  line-height: calc(49px + 5 * (100vw - 375px) / 1545);
+  font-weight: 700;
+}
+.bs-container.technology-partners nav .nav-link span {
+  display: block;
+  color: #A0A0A0;
+  border-bottom: 2px solid #A0A0A0;
+  padding-block-end: 1rem;
+  cursor: pointer;
+  font-size: calc(22px + 0 * (100vw - 375px) / 1545);
+  line-height: calc(32px + 0 * (100vw - 375px) / 1545);
+}
+.bs-container.technology-partners nav .nav-link.active {
+  font-weight: 700;
+}
+.bs-container.technology-partners nav .nav-link.active span {
+  color: #21245C;
+  border-bottom: 2px solid #21245C;
+}
+.bs-container.technology-partners .tab-content {
+  margin-block-start: 1.5rem;
+}
+
+/*# sourceMappingURL=technology-partners.css.map */
